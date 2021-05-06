@@ -1,6 +1,6 @@
 {
-    "name": "QR Code Generator",
-    "version": "2.1",
+    "name": "QRGen",
+    "version": "0.1.1",
     "manifest_version": 2,
     "description": "Generates a QR code for the current webpage",
     "content_scripts": [
@@ -17,15 +17,11 @@
         }
     ],
     "browser_action": {
-        "default_title": "QR Code Generator",
-        "default_icon": "qr.png",
+        "default_title": "QRGen",
+        "default_icon": "qr-code.png",
         "default_popup": "popup.html"
     },
-    "background": {
-        "scripts": [
-            "background.js"
-        ]
-    },
+    "background": {},
     "permissions": [
         "tabs"
     ]
