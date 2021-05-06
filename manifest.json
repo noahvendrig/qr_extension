@@ -1,0 +1,32 @@
+{
+    "name": "QR Code Generator",
+    "version": "2.1",
+    "manifest_version": 2,
+    "description": "Generates a QR code for the current webpage",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "popup.css"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_title": "QR Code Generator",
+        "default_icon": "qr.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
